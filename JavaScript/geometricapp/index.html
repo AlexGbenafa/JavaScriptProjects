@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GEOMETRICAPP</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	  	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	    		<img src="img/logo.png" width="5%">
+	    		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	     	 		<span class="navbar-toggler-icon"></span>
+	    		</button>
+	    		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		      		<ul class="navbar-nav">
+		        		<li class="nav-item active">
+		          			<a class="nav-link" href="index.html">ACCEUIL <span class="sr-only">(current)</span></a>
+		        		</li>
+
+		        		<li class="nav-item dropdown">
+					          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					            FIGURES
+					          </a>
+				          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				            <a class="dropdown-item" href="#square">CARRÉ</a>
+				            <a class="dropdown-item" href="#triangle">TRIANGLE</a>
+				            <a class="dropdown-item" href="#semiCircle">DEMI-CERCLE</a>
+				            <a class="dropdown-item" href="#circle">CERCLE</a>
+				            <a class="dropdown-item" href="#">LOSANGE</a>
+				            <a class="dropdown-item" href="#">TRAPÈZE</a>
+				            <a class="dropdown-item" href="#">PARALLÉLOGRAMME</a>
+				            <a class="dropdown-item" href="#">PENTAGONE</a>
+				            <a class="dropdown-item" href="#">HEXAGONE</a>
+				          </div>
+        				</li>
+		        		
+		      		</ul>
+	    		</div>
+  			</nav>
+			<div class="banner"></div>
+		</header>
+
+		<div class="body">
+			<div class="edm">
+				<br>
+		    	<br>
+		    	<br>
+
+		    	<div class="card" style="width: 18rem;">
+			    	<div class="card-body">
+			   			<h5 class="card-title" id="square">CARRÉ</h5>      		
+			        	<br>
+			        	<p>AIRE = CÔTÉ X COTÊ</p>
+			        	<br>
+			        	<button id ="squar-cal" onclick="squareArea()">CALCULER</button>
+			        	<br>
+			        	<br>
+			        	<p id="resumeSquare-el"></p>
+			       		<p id="resultSquare-el"></p>
+		      		</div>
+		    	</div>
+
+		    	<br>
+		    	<br>
+		    	<br>
+
+			    <div class="card" style="width: 18rem;">
+			      <div class="card-body">
+			        	<h5 class="card-title" id="triangle">TRIANGLE</h5>
+			        	<br>
+			        	<p>AIRE = (Base x Hauteur) / 2</p>
+			        	<br>
+			        	<button id="triangle-cal" onclick="triangleArea()">CALCULER</button>
+			        	<br>
+			        	<br>
+			        	<p id="resumetriangle-el"></p>
+			       		<p id="resultriangle-el"></p>
+		      		</div>
+		    	</div>
+
+		    	<br>
+		    	<br>
+		    	<br>
+
+		    	<div class="card" style="width: 18rem;">
+			      	<div class="card-body">
+			        	<h5 class="card-title" id="semiCircle">DEMI-CERCLE</h5>
+			        	<br>
+			        	<p>AIRE = 1/2 x PI x R²</p>
+			        	<br>
+			        	<button class="semiCercle-cal" onclick="semiCercleArea()">CALCULER</button>
+			        	<br>
+			        	<br>
+			        	<p id="resumeSemiCercle-el"></p>
+			       		<p id="resultSemiCercle-el"></p>
+		      		</div>
+		    	</div>
+
+		    	<br>
+		    	<br>
+		    	<br>
+
+			    <div class="card" style="width: 18rem;">
+			      	<div class="card-body">
+			        	<h5 class="card-title" id="circle">CERCLE</h5>
+			        	<br>
+			        	<p>AIRE = PI x R²</p>
+			        	<br>
+			        	<button id="cercle-cal" onclick="cercleArea()">CALCULER</button>
+			        	<br>
+			        	<br>
+			        	<p id="resumeCercle-el"></p>
+			       		<p id="resultCercle-el"></p>
+		      		</div>
+		    	</div>
+
+		    	<br>
+		    	<br>
+		    	<br>
+
+			    <div class="card" style="width: 18rem;">
+			      	<div class="card-body">
+			        	<h5 class="card-title" id="lozenge">LOSANGE</h5>
+			        	<br>
+			        	<p>AIRE = (Grande diagonale x Petite diagonale) / 2</p>
+			        	<br>
+			        	<button id="lozenge-cal" onclick="lozenge()">CALCULER</button>
+			        	<br>
+			        	<br>
+			        	<p id="resumeLozenge-el"></p>
+			       		<p id="resultLozenge-el"></p>
+		      		</div>
+		    	</div>
+
+		    	<br>
+		    	<br>
+		    	<br>
+
+		    	<div class="card" style="width: 18rem;">
+			      	<div class="card-body">
+			        	<h5 class="card-title" id="trapez">TRAPÉZE</h5>
+			        	<br>
+			        	<p>AIRE = ((Petite base + Grande base) * Hauteur) / 2</p>
+			        	<br>
+			        	<button id="trapez-cal" onclick="trapeze()">CALCULER</button>
+			        	<br>
+			        	<br>
+			        	<p id="resumeTrapeze-el"></p>
+			       		<p id="resultTrapeze-el"></p>
+		      		</div>
+		    	</div>
+
+		    	<br>
+		    	<br>
+		    	<br>
+
+		    	<div class="card" style="width: 18rem;">
+			      	<div class="card-body">
+			        	<h5 class="card-title" id="parallelogram">PARALLÉLOGRAMME</h5>
+			        	<br>
+			        	<p>AIRE = Base x hauteur</p>
+			        	<br>
+			        	<button id="parallelogram-cal" onclick="parallelogram()">CALCULER</button>
+			        	<br>
+			        	<br>
+			        	<p id="resumeParallelogram-el"></p>
+			       		<p id="resultParallelogram-el"></p>
+		      		</div>
+		    	</div>
+
+		    	<br>
+		    	<br>
+		    	<br>
+
+		    	<div class="card" style="width: 18rem;">
+			      	<div class="card-body">
+			        	<h5 class="card-title" id="pentagone">PENTAGONE</h5>
+			        	<br>
+			        	<p>AIRE = (5 * ((Base x Hauteur) / 2))</p>
+			        	<br>
+			        	<button id="pentagon-cal" onclick="pentagon()">CALCULER</button>
+			        	<br>
+			        	<br>
+			        	<p id="resumePentagon-el"></p>
+			       		<p id="resultPentagon-el"></p>
+		      		</div>
+		    	</div>
+
+		    	<br>
+		    	<br>
+		    	<br>
+
+		    	<div class="card" style="width: 18rem;">
+			      	<div class="card-body">
+			        	<h5 class="card-title" id="hexagone">HEXAGONE</h5>
+			        	<br>
+			        	<p>AIRE = CÔTÉ X COTÊ</p>
+			        	<br>
+			        	<button id="squar-cal">CALCULER</button>
+			        	<br>
+			        	<br>
+			       		<p></p>
+		      		</div>
+		    	</div>
+
+		    	<br>
+		    	<br>
+		    	<br>
+
+	    	</div>
+
+    	</div>
+		
+    	<script src="js/index.js"></script>
+	</body>
+</html>

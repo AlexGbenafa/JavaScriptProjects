@@ -1,0 +1,44 @@
+body{
+    background: linear-gradient(to bottom right, #333333, #121212);
+}
+
+canvas{ 
+    margin-left:350px ;
+    width: 35%;
+    border: 1px solid black; 
+}
+
+.game{
+    display: flex;
+    flex-direction: row;
+}
+
+#play{
+    color: black;
+    text-align:center;
+}
+
+#play:hover{
+    color: goldenrod;
+}
+
+#score-el{
+    font-size: 30px;
+    color: goldenrod;
+    text-align: center;
+}
+
+#vague-el{
+    font-size: 30px;
+    color: goldenrod;
+    text-align: center;
+}
+
+#param{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
+    margin-left: 400px;
+}
+

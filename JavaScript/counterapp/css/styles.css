@@ -1,0 +1,79 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: skyblue;
+}
+
+h1,h2,h3{
+	text-align: center;
+}
+
+h1{
+	padding-top:10%;
+}
+
+h2{
+	padding-top:5%;
+	padding-bottom:3%;
+}
+
+.savetitle{
+	padding-top:2%;
+	padding-bottom:1%;
+}
+
+#increment-btn{
+	text-align: center;
+	color: white;
+	border: none;
+	width: 70px;
+	background-color: darkgreen;
+	margin-leftt: 50px;
+	display: block;
+	margin:0 auto;
+}
+
+#increment-btn:hover{
+	background-color: green;
+}
+
+#reset-btn{
+	text-align: center;
+	color: white;
+	border: none;
+	width: 70px;
+	background-color: darkred;
+	margin-leftt: 50px;
+	display: block;
+	margin:0 auto;
+}
+
+#reset-btn:hover{
+	background-color: red;
+}
+
+#save-btn{
+	text-align: center;
+	color: white;
+	border: none;
+	width: 70px;
+	background-color: darkblue;
+	margin-leftt: 50px;
+	display: block;
+	margin:0 auto;
+}
+
+#save-btn:hover{
+	background-color: blue;
+}
+
+.but{
+	padding-top: 2%;
+	margin-left: 30%;
+	width: 40%;
+	display: flex;
+}
+

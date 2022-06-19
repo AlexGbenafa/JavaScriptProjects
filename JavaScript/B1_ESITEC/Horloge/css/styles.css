@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #8BC6EC;
+	background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.time{
+	margin-left: 30%;
+	margin-top: 10%;
+	display: flex;
+	flex-direction: row;
+	background-color: #8BC6EC;
+	background-image: linear-gradient(135deg, #8BC6EC 0%, #9596e2 100%);
+	width: 135px;
+}
+
+.container_clock{
+	position: relative;
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	border-box:  1px solid black;
+	background-image: url('../img/clock');
+	background-size: cover ;
+}
+
+.needle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: bottom;
+	border-radius: 2px;
+}
+
+.hours{
+	width: 4px;
+	height: 16%;
+	background-color: blue;
+}
+
+.minutes{
+	width: 2px;
+	height: 25%;
+	background-color: red;
+}
+
+.seconds{
+	box-shadow: -1px -1px black;
+	width: 1px;
+	height: 30%;
+	background-color: whitesmoke;
+}
+
+button{
+	border-radius: none;
+	color: whitesmoke;
+	background-color: black;
+}
+
+#hours-el{
+	font-variant-numeric: slashed-zero;
+}
+
+#minutes-el{
+	font-variant-numeric: oldstyle-nums;
+}
+
+#seconds-el{
+	font-variant-numeric: oldstyle-nums;
+}

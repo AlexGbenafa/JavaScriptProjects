@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	height: 100vh;
+}
+
+.banner{
+	background-image: url("../img/backgroungeometricapp.png");
+
+  	min-height: 600px; 
+  	/* Creer l'effet parallax */
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.body{
+	height: 1000px;
+}
+
+.edm{
+	display: grid;
+	grid-auto-columns: auto-auto-auto ;
+	justify-content: space-around;
+}
+
+button{
+    font-size: 1.2em;
+    background: #c17c13;
+    border: 0;
+    color: #fff;
+    margin-left: 20%;
+}
